@@ -3,6 +3,7 @@ import { Box, Container } from '@mui/material';
 import Lottie from 'lottie-react';
 import Buffer from './Buffer.json';
 import Name from './name.png';
+import { useNavigate } from 'react-router-dom';
 
 const globalStyles = {
   body: {
@@ -11,9 +12,10 @@ const globalStyles = {
 };
 
 export default function Cover() {
+  const navigate = useNavigate()
   useEffect(() => {
     const timer = setTimeout(() => {
-      window.location.href = '/portfolio';
+      navigate("/portfolio")
     }, 4000); 
 
     // Clean up the timer on component unmount
