@@ -11,7 +11,6 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Cover />} />
-        <Route exact path="/nav" element={<Navbar />} />
         <Route exact path="/portfolio" element={<Portfolio />} />
       </Routes>
     </Router>
