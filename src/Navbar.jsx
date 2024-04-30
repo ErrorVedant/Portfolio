@@ -12,7 +12,7 @@ export default function Navbar({ toggleBackgroundImage, toggleTextColor }) { // 
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backdropFilter: 'blur(10px)', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -20,7 +20,7 @@ export default function Navbar({ toggleBackgroundImage, toggleTextColor }) { // 
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <img src={Name} style={{ width: '175px', paddingTop: '7px' }} alt="name" />
 
           <ThButton toggleBackgroundImage={toggleBackgroundImage} toggleTextColor={toggleTextColor} /> {/* Pass toggleTextColor function as a prop */}

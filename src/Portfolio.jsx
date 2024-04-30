@@ -59,7 +59,7 @@ const Portfolio = () => {
         sx={{
           width: '100%',
           height: '100%',
-          minWidth: '527px',
+          // minWidth: '527px',
           backgroundImage: `url(${backgroundImage})`, // Using the backgroundImage state variable as the background image
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -73,7 +73,7 @@ const Portfolio = () => {
             display: 'flex',
             flexDirection: { md: 'row', xs: 'column-reverse', sm: 'row' },
             justifyContent: 'center',
-            height: '600px',
+            height: '700px',
             color: `${color_1}`,
             p: {
               md: '100px',

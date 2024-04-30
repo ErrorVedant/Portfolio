@@ -1,7 +1,7 @@
 import { colors } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 
-const words = ['ML DEVLOPER', 'FRONTEND DEVLOPER']; // Words to display
+const words = ['ML DEVELOPER', 'FRONTEND DEVELOPER']; // Words to display
 
 const Typewriter = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
