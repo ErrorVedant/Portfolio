@@ -5,6 +5,7 @@ import educare from './EduCare.png';
 import portfolio from './Portfolio.png'
 
 export default function Projects() {
+  
     return (
         <Box sx={{ display: 'flex', alignContent:'center' ,justifyContent:'center', flexDirection: { xs: 'column', sm: 'row' }, flexWrap: 'wrap' }}>
             {/* Project 1 */}

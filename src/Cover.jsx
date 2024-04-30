@@ -12,15 +12,6 @@ const globalStyles = {
 };
 
 export default function Cover() {
-  const navigate = useNavigate()
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate("/portfolio")
-    }, 4000); 
-
-    // Clean up the timer on component unmount
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <Box sx={{ backgroundColor: 'black'}}>

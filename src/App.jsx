@@ -10,8 +10,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Cover />} />
-        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/" element={<Portfolio />} />
+        {/* <Route exact path="/portfolio" element={<Portfolio />} /> */}
       </Routes>
     </Router>
   );

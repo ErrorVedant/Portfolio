@@ -1,5 +1,5 @@
 // Portfolio.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box } from '@mui/material';
 import Navbar from './Navbar';
 import back1 from './b1.jpg';
@@ -20,6 +20,7 @@ import Info from './info';
 import Projects from './Projects';
 import Sleep from './Sleep.json';
 import Pc from './PC.json';
+import Cover from './Cover';
 
 const globalStyles = {
   body: {
@@ -31,6 +32,16 @@ const Portfolio = () => {
   const [backgroundImage, setBackgroundImage] = useState(back2); // Set initial background image
   const [color_1, setColor] = useState('#fff');
   const theme = useTheme(); // Access the current theme
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        // navigate("/portfolio")
+        setLoading(false)
+      }, 4000); 
+  
+      // Clean up the timer on component unmount
+      return () => clearTimeout(timer);
+    }, []);
 
   // Function to toggle background image
   const toggleBackgroundImage = () => {
@@ -40,7 +51,9 @@ const Portfolio = () => {
     setColor(color_1 === '#fff' ? '#070707' : '#fff');
   };
 
-  return (
+  return loading?(
+    <Cover/>
+  ):(
     <ThemeProvider theme={theme}>
       <Box
         sx={{
