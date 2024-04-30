@@ -54,7 +54,7 @@ export default function About() {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0px' }}>
-          <h1 style={{ marginRight: '10px' }}>ABOUT ME</h1>
+        <p style={{ marginRight: '10px', fontSize: '50px', fontWeight: 'bold' }}>ABOUT ME</p>
           <Lottie animationData={Hi} style={{ width: '100px', height: '100px' }} />
         </div>
         ⚡ Crafting dynamic and engaging front-end interfaces for both web and mobile platforms.

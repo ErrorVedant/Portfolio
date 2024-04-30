@@ -29,19 +29,22 @@ const globalStyles = {
 };
 
 const Portfolio = () => {
+
+  
+
   const [backgroundImage, setBackgroundImage] = useState(back2); // Set initial background image
   const [color_1, setColor] = useState('#fff');
   const theme = useTheme(); // Access the current theme
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-      const timer = setTimeout(() => {
-        // navigate("/portfolio")
-        setLoading(false)
-      }, 4000); 
-  
-      // Clean up the timer on component unmount
-      return () => clearTimeout(timer);
-    }, []);
+    const timer = setTimeout(() => {
+      // navigate("/portfolio")
+      setLoading(false)
+    }, 4000);
+
+    // Clean up the timer on component unmount
+    return () => clearTimeout(timer);
+  }, []);
 
   // Function to toggle background image
   const toggleBackgroundImage = () => {
@@ -51,9 +54,9 @@ const Portfolio = () => {
     setColor(color_1 === '#fff' ? '#070707' : '#fff');
   };
 
-  return loading?(
-    <Cover/>
-  ):(
+  return loading ? (
+    <Cover />
+  ) : (
     <ThemeProvider theme={theme}>
       <Box
         sx={{
@@ -80,11 +83,14 @@ const Portfolio = () => {
               sm: '20px',
               xs: '10px',
             },
+
           }}
+          className="space-grotesk" // Apply space-grotesk class
+
         > {/* Use secondary text color */}
           <Box sx={{ width: { sm: '60%', xs: '100%' }, alignContent: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0px' }}>
-              <h1 style={{ marginRight: '10px' }}>VEDANT KHADE</h1>
+              <p style={{ marginRight: '10px', fontSize: '35px', fontWeight: 'bold' }}>VEDANT KHADE</p>
               <Lottie animationData={Hi} style={{ width: '100px', height: '100px' }} />
             </div>
             <Box sx={{ height: '45px', my: '10px' }}>
@@ -144,6 +150,7 @@ const Portfolio = () => {
             xs: '20px',
           },
         }}
+        className="space-grotesk" // Apply space-grotesk class
       > {/* Use secondary text color */}
 
 
@@ -163,16 +170,23 @@ const Portfolio = () => {
             sm: '20px',
             xs: '20px',
           },
+          borderTop: {sm:'2px solid'},
+          borderBottom: {sm:'2px solid'},
+          borderColor: `${color_1}`, // Set border color to match text color
+          
         }}
-      > {/* Use secondary text color */}
-      <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <Box sx={{ display: 'flex',flexDirection: 'row', alignItems: 'center', mb:'0px' , mt: { xs: '60px' } }}>
-        <p style={{ marginRight: '10px', fontSize: '50px', fontWeight: 'bold' }}>PROJECTS</p>
-          <Lottie animationData={Pc} style={{ width: '100px', height: '100px' }} />
-        </Box>
-        <Projects />
+        className="space-grotesk" // Apply space-grotesk class
+      >
+        {/* Use secondary text color */}
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', mb: '0px', mt: { xs: '60px' } }}>
+            <p style={{ marginRight: '10px', fontSize: '50px', fontWeight: 'bold' }}>PROJECTS</p>
+            <Lottie animationData={Pc} style={{ width: '100px', height: '100px' }} />
+          </Box>
+          <Projects />
         </div>
       </Box>
+
 
 
       <Box

@@ -32,6 +32,7 @@ export default function Info() {
                 transition: 'transform 0.5s ease',
                 transform: isVisible ? 'translateY(0)' : 'translateY(100%)', // Slide up animation
             }}
+            className="space-grotesk" // Apply space-grotesk class
         >
             <p>Name: Vedant Khade</p>
             <Box sx={{ display: 'flex', justifyContent: 'center'}}>

@@ -1,20 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Cover from './Cover';
-import Navbar from './Navbar';
+import './global-styles.css'; // Import global styles
+
 import Portfolio from './Portfolio';
 
 function App() {
-
-
-  return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Portfolio />} />
-        {/* <Route exact path="/portfolio" element={<Portfolio />} /> */}
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route exact path="/" element={<Portfolio />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

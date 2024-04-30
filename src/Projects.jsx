@@ -1,13 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Button } from '@mui/material';
 import to from './To_do_list.png'
 import educare from './EduCare.png';
-import portfolio from './Portfolio.png'
+import portfolio from './Portfolio.png';
 
 export default function Projects() {
-  
+    const [animationVisible, setAnimationVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const triggerPosition = document.getElementById('trigger').offsetTop;
+
+      if (scrollPosition > triggerPosition - window.innerHeight / 2) {
+        setAnimationVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     return (
-        <Box sx={{ display: 'flex', alignContent:'center' ,justifyContent:'center', flexDirection: { xs: 'column', sm: 'row' }, flexWrap: 'wrap' }}>
+        <Box
+            sx={{
+                display: 'flex',
+                alignContent: 'center',
+                justifyContent: 'center',
+                flexDirection: { xs: 'column', sm: 'row' },
+                flexWrap: 'wrap',
+                transition: 'transform 0.5s',
+          transform: animationVisible ? 'translateX(0)' : 'translateX(-100%)', // Slide in from left
+            }}
+        >
             {/* Project 1 */}
             <Box
                 sx={{
