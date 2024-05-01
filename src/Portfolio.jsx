@@ -96,7 +96,7 @@ const Portfolio = () => {
         > {/* Use secondary text color */}
           <Box sx={{ width: { sm: '60%', xs: '100%' }, alignContent: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '0px' }}>
-              <p style={{ marginRight: '10px', fontSize: '35px', fontWeight: 'bold' }}>hVEDANT KHADE</p>
+              <p style={{ marginRight: '10px', fontSize: '35px', fontWeight: 'bold' }}>VEDANT KHADE</p>
               <Lottie animationData={Hi} style={{ width: '100px', height: '100px' }} />
             </div>
             <Box sx={{ height: '45px', my: '10px' }}>
