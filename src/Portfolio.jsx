@@ -75,7 +75,7 @@ const Portfolio = () => {
             display: 'flex',
             flexDirection: { md: 'row', xs: 'column-reverse', sm: 'row' },
             justifyContent: 'center',
-            height: '700px',
+            height: '750px',
             color: `${color_1}`,
             p: {
               md: '100px',
