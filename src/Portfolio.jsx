@@ -30,7 +30,6 @@ const globalStyles = {
 
 const Portfolio = () => {
 
-  const [animationVisible, setAnimationVisible] = useState(false); // Define animationVisible state variable  
 
   const [backgroundImage, setBackgroundImage] = useState(back2); // Set initial background image
   const [color_1, setColor] = useState('#fff');
@@ -81,7 +80,7 @@ const Portfolio = () => {
             p: {
               md: '100px',
               sm: '20px',
-              xs: '10px',
+              xs: '30px',
             },
 
           }}
