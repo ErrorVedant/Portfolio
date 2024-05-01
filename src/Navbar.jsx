@@ -21,8 +21,7 @@ export default function Navbar({ toggleBackgroundImage, toggleTextColor }) { // 
           >
             <MenuIcon />
           </IconButton> */}
-          {/* <img src={Name} style={{ width: '175px', paddingTop: '7px' }} alt="name" /> */}
-          <p>VEDANT</p>
+          <img src={Name} style={{ width: '175px', paddingTop: '7px' }} alt="name" />
 
           <ThButton toggleBackgroundImage={toggleBackgroundImage} toggleTextColor={toggleTextColor} /> {/* Pass toggleTextColor function as a prop */}
         </Toolbar>
