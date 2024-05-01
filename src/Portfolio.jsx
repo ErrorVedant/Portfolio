@@ -83,7 +83,7 @@ const Portfolio = () => {
               xs: '10px',
             },
             mt: {
-              xs: '50px'
+              xs: '100px'
             }
           }}
           className="space-grotesk" // Apply space-grotesk class
