@@ -83,7 +83,7 @@ const Portfolio = () => {
               xs: '10px',
             },
             mt: {
-              xs: '100px'
+              xs: '70px'
             },
             mb: {
               xs: '50px'
