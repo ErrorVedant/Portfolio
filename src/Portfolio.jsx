@@ -30,7 +30,7 @@ const globalStyles = {
 
 const Portfolio = () => {
 
-  
+  const [animationVisible, setAnimationVisible] = useState(false); // Define animationVisible state variable  
 
   const [backgroundImage, setBackgroundImage] = useState(back2); // Set initial background image
   const [color_1, setColor] = useState('#fff');
@@ -142,7 +142,7 @@ const Portfolio = () => {
           flexDirection: { md: 'row', xs: 'column', sm: 'row' },
           justifyContent: 'center',
           height: '500px',
-          mt: { xs: '60px' },
+          mt: { xs: '140px' },
           color: `${color_1}`,
           p: {
             md: '30px',
@@ -164,7 +164,7 @@ const Portfolio = () => {
           flexDirection: { md: 'row', xs: 'column', sm: 'row' },
           justifyContent: 'center',
           color: `${color_1}`,
-          mt: { xs: '60px' },
+          mt: { xs: '140px' },
           p: {
             md: '30px',
             sm: '20px',
