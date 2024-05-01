@@ -81,8 +81,12 @@ export default function Projects() {
                 <h2>Portfolio</h2>
                 <img src={portfolio} alt="Project 2" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
                 <div>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Website</Button>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
+                <a href="https://portfolio-woad-sigma-75.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Website</Button>
+                    </a>  
+                    <a href="https://github.com/ErrorVedant/Portfolio" target="_blank" rel="noopener noreferrer">                 
+                     <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
+                     </a>
                 </div>
             </Box>
 
@@ -105,9 +109,13 @@ export default function Projects() {
                 <h2>EduCare</h2>
                 <img src={educare} alt="Project 3" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
                 <div>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Website</Button>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
-                </div>
+                <a href="https://edu-care-q5c6.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Website</Button>
+                    </a>  
+                    <a href="https://github.com/ErrorVedant/EduCare" target="_blank" rel="noopener noreferrer">                 
+                     <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
+                     </a>
+                    </div>
             </Box>
 
             {/* Project 4 */}
