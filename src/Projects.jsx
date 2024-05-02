@@ -3,6 +3,9 @@ import { Box, Button } from '@mui/material';
 import to from './To_do_list.png'
 import educare from './EduCare.png';
 import portfolio from './Portfolio.png';
+import lang_detection from './Language_detection.png';
+import eng_fr from './Eng_fr.png';
+
 
 export default function Projects() {
     const [animationVisible, setAnimationVisible] = useState(false);
@@ -30,7 +33,7 @@ export default function Projects() {
                 display: 'flex',
                 alignContent: 'center',
                 justifyContent: 'center',
-                flexDirection: { xs: 'column', sm: 'row' },
+                flexDirection: { sm: 'column', md: 'row' },
                 flexWrap: 'wrap',
                 transition: 'transform 0.5s',
           transform: animationVisible ? 'translateX(0)' : 'translateX(-100%)', // Slide in from left
@@ -40,8 +43,9 @@ export default function Projects() {
             <Box
                 sx={{
                     height: '400px',
-                    width: { xs: '100%', sm: '30%' },
+                    width: { sm: '100%', md: '30%' },
                     display: 'flex',
+                    my:{ sm:'30px'},
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -65,9 +69,10 @@ export default function Projects() {
             {/* Project 2 */}
             <Box
                 sx={{
-                    width: { xs: '100%', sm: '30%' },
+                    width: { sm: '100%', md: '30%' },
                     height: '400px',
                     display: 'flex',
+                    my:{ sm:'30px'},
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -93,9 +98,10 @@ export default function Projects() {
             {/* Project 3 */}
             <Box
                 sx={{
-                    width: { xs: '100%', sm: '30%' },
+                    width: { sm: '100%', md: '30%' },
                     height: '400px',
                     display: 'flex',
+                    my:{ sm:'30px'},
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -121,9 +127,10 @@ export default function Projects() {
             {/* Project 4 */}
             <Box
                 sx={{
-                    width: { xs: '100%', sm: '30%' },
+                    width: { sm: '100%', md: '30%' },
                     height: '400px',
                     display: 'flex',
+                    my:{ sm:'30px'},
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -134,20 +141,22 @@ export default function Projects() {
                     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Add box shadow
                 }}
             >
-                <h2>ML</h2>
-                <img src={educare} alt="Project 4" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
+                <h2>Language_Detection</h2>
+                <img src={lang_detection} alt="Project 4" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
                 <div>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Website</Button>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
-                </div>
+                <a href="https://www.kaggle.com/code/vedantkhade/language-detection" target="_blank" rel="noopener noreferrer">                 
+                     <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
+                     </a>                
+                     </div>
             </Box>
 
             {/* Project 5 */}
             <Box
                 sx={{
-                    width: { xs: '100%', sm: '30%' },
+                    width: { sm: '100%', md: '30%' },
                     height: '400px',
                     display: 'flex',
+                    my:{ sm:'30px'},
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -158,14 +167,39 @@ export default function Projects() {
                     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Add box shadow
                 }}
             >
-                <h2>ML</h2>
-                <img src={educare} alt="Project 5" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
+                <h2>English_French</h2>
+                <img src={eng_fr} alt="Project 5" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
                 <div>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Website</Button>
-                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
+                <a href="https://www.kaggle.com/code/vedantkhade/english-to-french" target="_blank" rel="noopener noreferrer">                 
+                     <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
+                     </a> 
                 </div>
             </Box>
             
+            <Box
+                sx={{
+                    width: { sm: '100%', md: '30%' },
+                    height: '400px',
+                    display: 'flex',
+                    my:{ sm:'30px'},
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderRadius: '10px',
+                    p: '20px',
+                    mx: '10px',
+
+                    mb: '20px',
+                    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Add box shadow
+                }}
+            >
+                <h2>Emotion_Detection</h2>
+                <img src={educare} alt="Project 5" style={{ width: '100%', height: 'auto', marginBottom: '10px' }} />
+                <div>
+                    <Button variant="contained" sx={{ m: '10px', color: 'black', backgroundColor: 'cyan', borderRadius: '20px', '&:hover': { backgroundColor: 'none', color: '#070707' } }}>Code</Button>
+                </div>
+            </Box>
+
         </Box>
     );
 }
